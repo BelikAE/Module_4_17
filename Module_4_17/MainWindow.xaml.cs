@@ -24,5 +24,9 @@ namespace Module_4_17
         {
             InitializeComponent();
         }
+        private void colorPicker_ColorChanged(object sender, RoutedPropertyChangedEventArgs<Color> e)
+        {
+            txb.Foreground = new SolidColorBrush (e.NewValue);
+        }
     }
 }

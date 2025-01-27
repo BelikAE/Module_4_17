@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Module_4_17"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="400" Width="400">
+    <StackPanel>
+        <local:ColorPicker x:Name="colorPicker" HorizontalAlignment="Center" Width="350" Margin="20" ColorChanged="colorPicker_ColorChanged"/>
+        <TextBlock x:Name="txb" Text="Цвет" HorizontalAlignment="Center" FontSize="24" />
+    </StackPanel>
 </Window>
